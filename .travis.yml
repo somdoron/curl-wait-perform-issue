@@ -1,0 +1,17 @@
+language: c
+
+os:
+- linux
+- osx
+
+dist: trusty
+
+compiler:
+- gcc
+
+addons:
+  apt:
+      packages:
+      - libcurl4-openssl-dev
+
+script: ./run.sh
